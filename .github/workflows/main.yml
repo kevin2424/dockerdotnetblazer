@@ -1,4 +1,4 @@
-name: Build and run .net 
+name: Build and run .net blazer web  APPlication
 
 on:
   push:
