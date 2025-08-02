@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\manimaran\\source\\repos\\DockerReview\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DockerReview.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DockerReview.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\manimaran\\source\\repos\\DockerReview\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\manimaran\\source\\repos\\DockerReview\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\manimaran\\source\\repos\\DockerReview\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\manimaran\\source\\repos\\DockerReview\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DockerReview.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DockerReview.props",
+      "PackagePath": "build\\DockerReview.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DockerReview.props",
+      "PackagePath": "buildMultiTargeting\\DockerReview.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DockerReview.props",
+      "PackagePath": "buildTransitive\\DockerReview.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
