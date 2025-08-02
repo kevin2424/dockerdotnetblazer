@@ -1,4 +1,4 @@
-name: Build and Test dockerreview
+name: Build and Test DockerReview
 
 on:
   push:
