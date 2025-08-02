@@ -1,4 +1,4 @@
-name: Build and run .net blazer web  APPlication
+name: Build and Push Docker Image
 
 on:
   push:
@@ -14,16 +14,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+    - name: Log in to DockerHub
+      uses: docker/login-action@v3
       with:
-        dotnet-version: '8.0.x'  # or 7.0.x, 6.0.x depending on your project
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-
-    - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+    - name: Build and Push Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: yourdockerhubusername/dockerreview:latest
